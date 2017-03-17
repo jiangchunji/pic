@@ -1,0 +1,63 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>jQuery微博简约贴图缩放插件</title>
+
+	<script type="text/javascript" src="../jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="jquery.artZoom.js"></script>
+	<script type="text/javascript">
+		jQuery(function ($) {
+			$('.artZoom').artZoom({
+				path: './images',	// 设置artZoom图片文件夹路径
+				preload: true,		// 设置是否提前缓存视野内的大图片
+				blur: true,			// 设置加载大图是否有模糊变清晰的效果
+
+				// 语言设置
+				left: '左旋转',		// 左旋转按钮文字
+				right: '右旋转',		// 右旋转按钮文字
+				source: '看原图'		// 查看原图按钮文字
+			});
+		});
+	</script>
+
+	<style type="text/css">
+
+
+		.artZoom{padding:3px;background:#FFF;border:1px solid #EBEBEB;}
+	</style>
+
+	<link href="jquery.artZoom.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<!--<center>-->
+	<!--<ul >-->
+		<!--<li></li>-->
+		<!--<li><a href="fl1.jpg"><img style="width: 20px;height: 20px;" class="artZoom" src="fl1.jpg" /></a></li>-->
+		<!--<li><a href="fl1.jpg"><img style="width: 20px;height: 20px;" class="artZoom" src="fl1.jpg" /></a></li>-->
+		<!--<li><a href="fl1.jpg"><img style="width: 20px;height: 20px;" class="artZoom" src="fl1.jpg" /></a></li>-->
+		<!--<li><a href="fl1.jpg"><img style="width: 20px;height: 20px;" class="artZoom" src="fl1.jpg" /></a></li>-->
+	<!--</ul>-->
+<!--</center>-->
+<a href="fl1.jpg"><img style="width: 20px;height: 20px;" class="artZoom" src="fl1.jpg" /></a>
+<table>
+	<tr>
+		<td>姓名</td>
+		<td>
+			<a href="fl1.jpg"><img style="width: 20px;height: 20px;" class="artZoom" src="fl1.jpg" /></a>
+		</td>
+	</tr>
+	<tr>
+		<td>姓名</td>
+		<td>
+			<a href="fl1.jpg"><img style="width: 20px;height: 20px;" class="artZoom" src="fl1.jpg" /></a>
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>
